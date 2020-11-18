@@ -41,6 +41,16 @@
   border: 1px solid #ccc;
   border-top: none;
 }
+        .tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
           body {background-color: coral;}
         fieldset {
         margin: 1em 0;
@@ -74,13 +84,13 @@ div {text-align: center;}
 </html>
 <!-- Tab links -->
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Breakfast')">Breakfast</button>
   <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
 </div>
 
 <!-- Tab content -->
-<div id="London" class="tabcontent">
+<div id="Home" class="tabcontent">
   <h3>Home</h3>
 <h1 class="black">
   My Favorite Foods
@@ -94,7 +104,7 @@ div {text-align: center;}
 </h2>
 </div>
 
-<div id="Paris" class="tabcontent">
+<div id="Breakfast" class="tabcontent">
   <h3>Breakfast</h3>
 <h1 class="black">
   My Favorite Breakfast Foods </h1>
