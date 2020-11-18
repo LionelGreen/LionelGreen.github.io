@@ -73,7 +73,7 @@ div {text-align: center;}
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  border-style: dashed;
+  border-style: solid;
 }
         .black {
         background-color: black ;
@@ -81,7 +81,7 @@ div {text-align: center;}
       
     </style> 
     </body>
-</html>
+
 <!-- Tab links -->
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
@@ -109,3 +109,20 @@ div {text-align: center;}
 <h1 class="black">
   My Favorite Breakfast Foods </h1>
 </div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</html>
