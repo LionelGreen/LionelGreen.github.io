@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Favorite Foods</title>
+  </head>
+  <body>
+    <style>
+      /* Dashed border */
+      hr.dashed {
+        color: #fec6a5;
+        border-top: dashed #fec6a5;
+        border-radius: 5px;
+      }
+
+      /* Dotted border */
+      hr.dotted {
+        color: #fec6a5;
+        border-top: dotted #fec6a5;
+        border-radius: 5px;
+      }
+
+      /* Solid border */
+      hr.solid {
+        color: #fec6a5;
+        border-top: solid #fec6a5;
+        border-radius: 5px;
+      }
+
+      /* Rounded border */
+      hr.rounded {
+        color: #fec6a5;
+        border-top: solid #fec6a5;
+        border-radius: 5px;
+      }
+      /* Style the tab */
+      .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        background-color: #f1f1f1;
+      }
+
+      /* Style the buttons that are used to open the tab content */
+      .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        border-radius: 25px;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+      }
+
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+        background-color: #fec6a5;
+      }
+
+      /* Create an active/current tablink class */
+      .tab button.active {
+        background-color: #ccc;
+      }
+
+      /* Style the tab content */
+      .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border-radius: 25px;
+        border: 1px solid #ccc;
+        border-top: none;
+      }
+      .tabcontent {
+        animation: fadeEffect 1s; /* Fading effect takes 1 second */
+      }
+
+      /* Go from zero to full opacity */
+      @keyframes fadeEffect {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      body {
+        background-color: #fec6a5;
+      }
+      fieldset {
+        margin: 1em 0;
+      }
+      legend {
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      div {
+        text-align: center;
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 25px;
+        border-style: solid;
+      }
+      .black {
+        border-radius: 25px;
+        background-color: #f1f1f1;
+        color: #fec6a5;
+      }
+      .vidblack {
+        border-radius: 25px;
+        background-color: black;
+        color: black;
+      }
+      .picleft {
+        border-radius: 25px;
+        border-style: solid;
+        float: left;
+      }
+      .picright {
+        border-radius: 25px;
+        border-style: solid;
+        float: right;
+      }
+    </style>
+    <h1>
+      Survey!
+    </h1>
+
+    <form>
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" />
+    </form>
+  </body>
+</html>
