@@ -220,7 +220,16 @@
     <h2>
       I Love Breakfast
     </h2>
-    <p></p>
+    <p style="font-size:50px" class="black">
+      Ah yes, the most important meal of the day.I love breakfast probably
+      because the food is just delicious but also because it's satisfying after
+      wakiing up. Here are some of my favorite breakfast foods:
+    </p>
+    <div>
+      <h1>
+        Pancakes
+      </h1>
+    </div>
   </div>
 
   <div id="Lunch" class="tabcontent">
@@ -244,5 +253,19 @@
       document.getElementById(cityName).style.display = "block";
       evt.currentTarget.className += " active";
     }
+    $(document).on("scroll", function() {
+var pageTop = $(document).scrollTop();
+var pageBottom = pageTop + $(window).height();
+var tags = $(".tag");
+for (var i = 0; i < tags.length; i++) {
+var tag = tags[i];
+
+if ($(tag).position().top < pageBottom) {
+$(tag).addClass("visible");
+} else {
+$(tag).removeClass("visible");
+}
+}
+});  
   </script>
 </html>
