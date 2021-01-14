@@ -30,8 +30,7 @@
       /* Rounded border */
       hr.rounded {
         color: #fec6a5;
-        border-top: solid #fec6a5;
-        border-radius: 5px;
+        `0border-radius: 5px;
       }
       /* Style the tab */
       .tab {
@@ -163,6 +162,7 @@
         src="https://cdn.glitch.com/a5bf2543-fdda-431f-b600-1c48eef691de%2FVIA%20FILMS%20Stock%20Footage%20Food%20Reel%20(online-video-cutter.com).mp4?v=1605734815684"
         type="video/mp4"
       />
+      <track src="HMsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
       Your browser does not support MP4 video.
     </video>
     <h2 class="black">Welcome, Please Take a Look At The Menu... 😋</h2>
@@ -219,8 +219,17 @@
         length="600"
       />
     </div>
-
-    <a href="https://lionelgreen.github.io/survey.html">Take Survey Here☚</a>
+<svg height="130" width="500">
+  <defs>
+    <lineargradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </lineargradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="25" font-family="Verdana" x="50" y="86">  <a href="https://lionelgreen.github.io/survey.html">Take Survey Here☚</a></text>
+  Sorry, your browser does not support inline SVG.
+</svg>
   </div>
 
   <div id="Breakfast" class="tabcontent">
@@ -231,13 +240,16 @@
     <h2>
       I Love Breakfast
     </h2>
-    <video width="1280" height="560" controls loop class="vidblack">
-      <source
-        src="https://cdn.glitch.com/a5bf2543-fdda-431f-b600-1c48eef691de%2FStock%20video%20of%20waffles%2C%20pan%20cake.mp4?v=1606849301875"
-        type="video/mp4"
-      />
-      Your browser does not support MP4 video.
-    </video>
+    <figure>
+      <video width="1280" height="560" controls loop class="vidblack">
+        <source
+          src="https://cdn.glitch.com/a5bf2543-fdda-431f-b600-1c48eef691de%2FStock%20video%20of%20waffles%2C%20pan%20cake.mp4?v=1606849301875"
+          type="video/mp4"
+        />
+        Your browser does not support MP4 video.
+      </video>
+      <figcaption>Breakfast Food Reel.</figcaption>
+    </figure>
     <p style="font-size:50px" class="black">
       Ah yes, the most important meal of the day.I love breakfast probably
       because the food is just delicious but also because it's satisfying after
@@ -488,6 +500,7 @@
             <td>Unsalted Butter</td>
             <td>4 Teaspoons</td>
           </tr>
+
           <tr>
             <td>Sharp Cheddar, Shredded</td>
             <td>4 Ounces</td>
@@ -742,13 +755,16 @@
     <h1 class="black">
       My Favorite Lunch Foods
     </h1>
-    <video width="1280" height="560" controls loop class="vidblack">
-      <source
-        src="https://cdn.glitch.com/a5bf2543-fdda-431f-b600-1c48eef691de%2FCINEMATIC%20SUSHI%20B%20ROLL%20VIDEO.mp4?v=1606934851855"
-        type="video/mp4"
-      />
-      Your browser does not support MP4 video.
-    </video>
+    <figure>
+      <video width="1280" height="560" controls loop class="vidblack">
+        <source
+          src="https://cdn.glitch.com/a5bf2543-fdda-431f-b600-1c48eef691de%2FCINEMATIC%20SUSHI%20B%20ROLL%20VIDEO.mp4?v=1606934851855"
+          type="video/mp4"
+        />
+        Your browser does not support MP4 video.
+      </video>
+      <figcaption>Lunch Food Reel</figcaption>
+    </figure>
     <p style="font-size:50px" class="black">
       After a long day, some lunch would be nice. Let's see some favorites:
     </p>
@@ -1092,13 +1108,16 @@
     <h2>
       I Love Dessert
     </h2>
-    <video width="1280" height="560" controls loop class="vidblack">
-      <source
-        src="https://cdn.glitch.com/a5bf2543-fdda-431f-b600-1c48eef691de%2FChoc%20Stock%20and%20Caramel%20-%20Artisan%20Chocolate.mp4?v=1607533746085"
-        type="video/mp4"
-      />
-      Your browser does not support MP4 video.
-    </video>
+    <figure>
+      <video width="1280" height="560" controls loop class="vidblack">
+        <source
+          src="https://cdn.glitch.com/a5bf2543-fdda-431f-b600-1c48eef691de%2FChoc%20Stock%20and%20Caramel%20-%20Artisan%20Chocolate.mp4?v=1607533746085"
+          type="video/mp4"
+        />
+        Your browser does not support MP4 video.
+      </video>
+      <figcaption>Dessert Food Reel</figcaption>
+    </figure>
     <p style="font-size:50px" class="black">
       Ah yes, the most important meal of the day.I love breakfast probably
       because the food is just delicious but also because it's satisfying after
