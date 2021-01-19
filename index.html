@@ -30,8 +30,7 @@
       /* Rounded border */
       hr.rounded {
         color: #fec6a5;
-        border-top: solid #fec6a5;
-        border-radius: 5px;
+        `0border-radius: 5px;
       }
       /* Style the tab */
       .tab {
@@ -51,6 +50,7 @@
         cursor: pointer;
         padding: 14px 16px;
         transition: 0.3s;
+        boarder-color: white;
       }
 
       /* Change background color of buttons on hover */
@@ -158,10 +158,21 @@
     <h1 class="black">
       My Favorite Foods
     </h1>
+    <ul>
+      <li><a href="#WWTSBA">What Will This Site Be About</a></li>
+      <li><a href="#IOF">Images of Food</a></li>
+      <li><a href="#HT">Health Tips</a></li>
+    </ul>
     <video width="1280" height="560" controls loop class="vidblack">
       <source
         src="https://cdn.glitch.com/a5bf2543-fdda-431f-b600-1c48eef691de%2FVIA%20FILMS%20Stock%20Footage%20Food%20Reel%20(online-video-cutter.com).mp4?v=1605734815684"
         type="video/mp4"
+      />
+      <track
+        src="HMsubtitles_en.vtt"
+        kind="subtitles"
+        srclang="en"
+        label="English"
       />
       Your browser does not support MP4 video.
     </video>
@@ -176,6 +187,9 @@
         width="600"
         length="600"
       />
+      <h2 id="WWTSBA">
+        What Will This Site Be About?
+      </h2>
       <p>
         This site will be me prasing food and telling you my favorite types and
         some recipes for making them so you can try them yourself!
@@ -186,10 +200,13 @@
         width="600"
         length="600"
       />
-      <p class="black">
-        Here's Some Images of Food
-      </p>
+      <aside>
+        <p id="IOF" class="black">
+          Here's Some Images of Food
+        </p>
+      </aside>
       <hr class="solid" />
+
       <h2>
         I Want to Know What Type of Food Do Most People Like. <br />
         Take a Survey!
@@ -214,8 +231,51 @@
         length="600"
       />
     </div>
-
-    <a href="https://lionelgreen.github.io/survey.html">Take Survey Here☚</a>
+    <svg height="130" width="500">
+      <defs>
+        <lineargradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+        </lineargradient>
+      </defs>
+      <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+      <text fill="#ffffff" font-size="12" font-family="Verdana" x="50" y="86">
+        <a href="https://lionelgreen.github.io/survey.html">
+          Take Survey Here☚
+        </a>
+      </text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+    <h1 id="HT">
+      Health Tips
+    </h1>
+    <p>
+      While eating food is great, it's important to stay healthy. Hears some
+      facts and audio clips detailing someimportant facts about your health!
+    </p>
+    <h2>
+      Audio Clips
+    </h2>
+    <figure>
+      <figcaption>Nutrition for a Healthy Life:</figcaption>
+      <audio
+        controls
+        src="https://cdn.glitch.com/a5bf2543-fdda-431f-b600-1c48eef691de%2FNutrition%20for%20a%20Healthy%20Life.mp3?v=1610648620765"
+      >
+        Your browser does not support the
+        <code>audio</code> element.
+      </audio>
+    </figure>
+    <figure>
+      <figcaption>How to Create a Healthy Plate:</figcaption>
+      <audio
+        controls
+        src="https://cdn.glitch.com/a5bf2543-fdda-431f-b600-1c48eef691de%2FHow%20to%20Create%20a%20Healthy%20Plate.mp3?v=1610650463011"
+      >
+        Your browser does not support the
+        <code>audio</code> element.
+      </audio>
+    </figure>
   </div>
 
   <div id="Breakfast" class="tabcontent">
@@ -226,13 +286,16 @@
     <h2>
       I Love Breakfast
     </h2>
-    <video width="1280" height="560" controls loop class="vidblack">
-      <source
-        src="https://cdn.glitch.com/a5bf2543-fdda-431f-b600-1c48eef691de%2FStock%20video%20of%20waffles%2C%20pan%20cake.mp4?v=1606849301875"
-        type="video/mp4"
-      />
-      Your browser does not support MP4 video.
-    </video>
+    <figure>
+      <video width="1280" height="560" controls loop class="vidblack">
+        <source
+          src="https://cdn.glitch.com/a5bf2543-fdda-431f-b600-1c48eef691de%2FStock%20video%20of%20waffles%2C%20pan%20cake.mp4?v=1606849301875"
+          type="video/mp4"
+        />
+        Your browser does not support MP4 video.
+      </video>
+      <figcaption>Breakfast Food Reel.</figcaption>
+    </figure>
     <p style="font-size:50px" class="black">
       Ah yes, the most important meal of the day.I love breakfast probably
       because the food is just delicious but also because it's satisfying after
@@ -335,8 +398,7 @@
         Bacon
       </h1>
       <p>
-        A classic staple of a morning breakfast, my favorite type of pancakes
-        are chocolate chip pancakes.
+        If you don't like bacon... what are you?
       </p>
       <p>
         This is how you can make it yourself:
@@ -436,8 +498,8 @@
         Grits
       </h1>
       <p>
-        A classic staple of a morning breakfast, my favorite type of pancakes
-        are chocolate chip pancakes.
+        Another breakfast classic. I like mine with cheese or jelly (don't
+        judge.)
       </p>
       <p>
         This is how you can make it yourself:
@@ -484,6 +546,7 @@
             <td>Unsalted Butter</td>
             <td>4 Teaspoons</td>
           </tr>
+
           <tr>
             <td>Sharp Cheddar, Shredded</td>
             <td>4 Ounces</td>
@@ -573,8 +636,7 @@
         Eggs
       </h1>
       <p>
-        A classic staple of a morning breakfast, my favorite type of pancakes
-        are chocolate chip pancakes.
+        The best way to make eggs is always scrambled. ALWAYS.
       </p>
       <p>
         This is how you can make it yourself:
@@ -606,6 +668,7 @@
           <tr>
             <td>Salt</td>
             <td>A Pinch</td>
+            j
           </tr>
           <tr>
             <td>Pepper</td>
@@ -738,13 +801,16 @@
     <h1 class="black">
       My Favorite Lunch Foods
     </h1>
-    <video width="1280" height="560" controls loop class="vidblack">
-      <source
-        src="https://cdn.glitch.com/a5bf2543-fdda-431f-b600-1c48eef691de%2FCINEMATIC%20SUSHI%20B%20ROLL%20VIDEO.mp4?v=1606934851855"
-        type="video/mp4"
-      />
-      Your browser does not support MP4 video.
-    </video>
+    <figure>
+      <video width="1280" height="560" controls loop class="vidblack">
+        <source
+          src="https://cdn.glitch.com/a5bf2543-fdda-431f-b600-1c48eef691de%2FCINEMATIC%20SUSHI%20B%20ROLL%20VIDEO.mp4?v=1606934851855"
+          type="video/mp4"
+        />
+        Your browser does not support MP4 video.
+      </video>
+      <figcaption>Lunch Food Reel</figcaption>
+    </figure>
     <p style="font-size:50px" class="black">
       After a long day, some lunch would be nice. Let's see some favorites:
     </p>
@@ -796,7 +862,8 @@
         Pizza
       </h1>
       <p>
-        Who doesn't like these?
+        Possibly the most popular food ever. You can share with your friends or
+        if you're greedy like me, you can eat it yourself.
       </p>
       <p>
         This is how you can make it yourself:
@@ -949,7 +1016,7 @@
         Orange Chicken
       </h1>
       <p>
-        Who doesn't like these?
+        Yeah, I love chinese food too.
       </p>
       <p>
         This is how you can make it yourself:
@@ -1087,13 +1154,16 @@
     <h2>
       I Love Dessert
     </h2>
-    <video width="1280" height="560" controls loop class="vidblack">
-      <source
-        src="https://cdn.glitch.com/a5bf2543-fdda-431f-b600-1c48eef691de%2FChoc%20Stock%20and%20Caramel%20-%20Artisan%20Chocolate.mp4?v=1607533746085"
-        type="video/mp4"
-      />
-      Your browser does not support MP4 video.
-    </video>
+    <figure>
+      <video width="1280" height="560" controls loop class="vidblack">
+        <source
+          src="https://cdn.glitch.com/a5bf2543-fdda-431f-b600-1c48eef691de%2FChoc%20Stock%20and%20Caramel%20-%20Artisan%20Chocolate.mp4?v=1607533746085"
+          type="video/mp4"
+        />
+        Your browser does not support MP4 video.
+      </video>
+      <figcaption>Dessert Food Reel</figcaption>
+    </figure>
     <p style="font-size:50px" class="black">
       Ah yes, the most important meal of the day.I love breakfast probably
       because the food is just delicious but also because it's satisfying after
@@ -1202,8 +1272,8 @@
         Ice Cream
       </h1>
       <p>
-        A classic staple of a morning breakfast, my favorite type of pancakes
-        are chocolate chip pancakes.
+        Another classic dessert, I like chocolate, caramel, and oreo (basically
+        anything sweet.)
       </p>
       <p>
         This is how you can make it yourself:
@@ -1213,8 +1283,8 @@
         ><img
           src="https://cdn.glitch.com/a5bf2543-fdda-431f-b600-1c48eef691de%2F4440858886_1420373fa8_c.jpg?v=1608049399108"
           class="picleft"
-          width="1000"
-          length="300"
+          width="600"
+          length="600"
         />
       </a>
       <table>
@@ -1276,8 +1346,7 @@
         Donuts
       </h1>
       <p>
-        A classic staple of a morning breakfast, my favorite type of pancakes
-        are chocolate chip pancakes.
+        Krispy Kremes, that's all I have to say...
       </p>
       <p>
         This is how you can make it yourself:
@@ -1346,24 +1415,8 @@
         </thead>
         <tbody>
           <tr>
-            <td>Large EGGS</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>Milk</td>
-            <td>1/4 Cup</td>
-          </tr>
-          <tr>
-            <td>Salt</td>
-            <td>A Pinch</td>
-          </tr>
-          <tr>
-            <td>Pepper</td>
-            <td>Another Pinch</td>
-          </tr>
-          <tr>
-            <td>Butter</td>
-            <td>2 Teaspoons</td>
+            <td>Money</td>
+            <td>Depends on the Menu Item.</td>
           </tr>
         </tbody>
       </table>
@@ -1373,17 +1426,7 @@
         </h2>
         <ul>
           <li style="font-size:20px">
-            BEAT eggs, milk, salt and pepper in medium bowl until blended.
-          </li>
-          <li style="font-size:20px">
-            HEAT butter in large nonstick skillet over medium heat until hot.
-            POUR in egg mixture. As eggs begin to set, gently PULL the eggs
-            across the pan with a spatula, forming large soft curds.
-          </li>
-          <li style="font-size:20px">
-            CONTINUE cooking—pulling, lifting and folding eggs—until thickened
-            and no visible liquid egg remains. Do not stir constantly. REMOVE
-            from heat. SERVE immediately.
+            Go Purchase an ICEE
           </li>
         </ul>
       </div>
@@ -1398,9 +1441,7 @@
       <p>
         This is how you can make it yourself:
       </p>
-      <a
-        href="https://www.simplyrecipes.com/recipes/eggs_benedicthttps://bakerbynature.com/new-orleans-style-beignets/"
-      >
+      <a href="https://bakerbynature.com/new-orleans-style-beignets/">
         <img
           src="https://cdn.glitch.com/a5bf2543-fdda-431f-b600-1c48eef691de%2FBeignets_and_Caf%C3%A9_au_Lait_at_Caf%C3%A9_du_Monde%2C_New_Orleans.jpg?v=1608051136918"
           class="picright"
@@ -1438,25 +1479,29 @@
           </tr>
           <tr>
             <td>
-              pure vanilla extract
+              Pure Vanilla Extract
             </td>
-            <td>1 c</td>
+            <td>2 and 1/2 Teaspoons</td>
           </tr>
           <tr>
-            <td>Egg Yolks</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>Lemon Juice</td>
-            <td>1 Tablespoon</td>
+            <td>Bread Flour</td>
+            <td>7 Cups</td>
           </tr>
           <tr>
             <td>Salt</td>
-            <td>1/2 Teaspoon</td>
+            <td>1 and 1/2 Teaspoons</td>
           </tr>
           <tr>
-            <td>Cayenne or Tabasco</td>
-            <td>A Dash</td>
+            <td>Unsalted Butter, at Room Temperature</td>
+            <td>5 Teaspoons</td>
+          </tr>
+          <tr>
+            <td>Peanut Oil, for Deep Frying</td>
+            <td>4 Cups</td>
+          </tr>
+          <tr>
+            <td>Confectioners’ Sugar</td>
+            <td>2 Cups</td>
           </tr>
         </tbody>
       </table>
@@ -1482,7 +1527,6 @@
       </div>
     </div>
   </div>
-
   <script>
     function openCity(evt, cityName) {
       var i, tabcontent, tablinks;
