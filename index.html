@@ -50,6 +50,7 @@
         cursor: pointer;
         padding: 14px 16px;
         transition: 0.3s;
+        boarder-color: white;
       }
 
       /* Change background color of buttons on hover */
@@ -157,12 +158,22 @@
     <h1 class="black">
       My Favorite Foods
     </h1>
+    <ul>
+      <li><a href="#WWTSBA">What Will This Site Be About</a></li>
+      <li><a href="#IOF">Images of Food</a></li>
+      <li><a href="#HT">Health Tips</a></li>
+    </ul>
     <video width="1280" height="560" controls loop class="vidblack">
       <source
         src="https://cdn.glitch.com/a5bf2543-fdda-431f-b600-1c48eef691de%2FVIA%20FILMS%20Stock%20Footage%20Food%20Reel%20(online-video-cutter.com).mp4?v=1605734815684"
         type="video/mp4"
       />
-      <track src="HMsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+      <track
+        src="HMsubtitles_en.vtt"
+        kind="subtitles"
+        srclang="en"
+        label="English"
+      />
       Your browser does not support MP4 video.
     </video>
     <h2 class="black">Welcome, Please Take a Look At The Menu... 😋</h2>
@@ -176,7 +187,7 @@
         width="600"
         length="600"
       />
-      <h2>
+      <h2 id="WWTSBA">
         What Will This Site Be About?
       </h2>
       <p>
@@ -190,11 +201,12 @@
         length="600"
       />
       <aside>
-        <p class="black">
+        <p id="IOF" class="black">
           Here's Some Images of Food
         </p>
       </aside>
       <hr class="solid" />
+
       <h2>
         I Want to Know What Type of Food Do Most People Like. <br />
         Take a Survey!
@@ -219,17 +231,51 @@
         length="600"
       />
     </div>
-<svg height="130" width="500">
-  <defs>
-    <lineargradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
-      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
-    </lineargradient>
-  </defs>
-  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
-  <text fill="#ffffff" font-size="25" font-family="Verdana" x="50" y="86">  <a href="https://lionelgreen.github.io/survey.html">Take Survey Here☚</a></text>
-  Sorry, your browser does not support inline SVG.
-</svg>
+    <svg height="130" width="500">
+      <defs>
+        <lineargradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+        </lineargradient>
+      </defs>
+      <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+      <text fill="#ffffff" font-size="12" font-family="Verdana" x="50" y="86">
+        <a href="https://lionelgreen.github.io/survey.html">
+          Take Survey Here☚
+        </a>
+      </text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+    <h1 id="HT">
+      Health Tips
+    </h1>
+    <p>
+      While eating food is great, it's important to stay healthy. Hears some
+      facts and audio clips detailing someimportant facts about your health!
+    </p>
+    <h2>
+      Audio Clips
+    </h2>
+    <figure>
+      <figcaption>Nutrition for a Healthy Life:</figcaption>
+      <audio
+        controls
+        src="https://cdn.glitch.com/a5bf2543-fdda-431f-b600-1c48eef691de%2FNutrition%20for%20a%20Healthy%20Life.mp3?v=1610648620765"
+      >
+        Your browser does not support the
+        <code>audio</code> element.
+      </audio>
+    </figure>
+    <figure>
+      <figcaption>How to Create a Healthy Plate:</figcaption>
+      <audio
+        controls
+        src="https://cdn.glitch.com/a5bf2543-fdda-431f-b600-1c48eef691de%2FHow%20to%20Create%20a%20Healthy%20Plate.mp3?v=1610650463011"
+      >
+        Your browser does not support the
+        <code>audio</code> element.
+      </audio>
+    </figure>
   </div>
 
   <div id="Breakfast" class="tabcontent">
